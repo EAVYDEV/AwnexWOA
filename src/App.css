@@ -1,0 +1,200 @@
+/* General Styling for the body */
+body {
+  font-family: 'Arial', sans-serif; /* Sets the font for the entire document */
+  background-color: #f4f4f4; /* Light gray background color */
+  color: #333; /* Dark gray text color */
+  padding: 20px; /* Adds padding around the body */
+  margin: 0; /* Removes default margin */
+}
+
+/* Header styling */
+.header {
+  display: flex; /* Aligns child elements in a row */
+  align-items: center; /* Vertically centers the items */
+  justify-content: space-between; /* Spaces items evenly */
+  padding: 10px 20px; /* Adds padding inside the header */
+  background-color: #ffffff; /* White background color */
+  color: #006495; /* Awnex blue color for text */
+}
+
+/* Logo styling */
+.logo {
+  height: 50px; /* Sets the height of the logo image */
+}
+
+/* Title styling */
+.title {
+  margin: 0; /* Removes default margin */
+  text-align: center; /* Centers the text */
+  flex-grow: 1; /* Allows the title to expand and take available space */
+}
+
+/* Controls section styling */
+.controls {
+  display: flex; /* Aligns buttons and dropdown in a row */
+  align-items: center; /* Vertically centers the items */
+}
+
+/* Button styling */
+#refresh-button, #save-button {
+  padding: 10px 20px; /* Adds padding inside the buttons */
+  font-size: 16px; /* Sets the font size */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border: none; /* Removes default border */
+  background-color: #00639599; /* Awnex blue color for button background */
+  color: #fff; /* White text color */
+  margin-left: 10px; /* Adds margin to the left for spacing */
+  border-radius: 5px; /* Rounds the corners of the buttons */
+}
+
+/* Save button styling when there are unsaved changes */
+#save-button.unsaved {
+  background-color: #ff0000; /* Red color for unsaved state */
+}
+
+/* Hover effects for buttons */
+#refresh-button:hover, #save-button:hover, .dropbtn:hover {
+  background-color: #003366; /* Darker blue for hover effect */
+}
+
+/* Breadcrumbs styling */
+.breadcrumbs {
+  margin-bottom: 10px; /* Adds margin below the breadcrumbs */
+}
+
+/* Breadcrumbs link styling */
+.breadcrumbs a {
+  text-decoration: none; /* Removes underline from links */
+  color: #004080; /* Awnex blue color for links */
+}
+
+/* Breadcrumbs text styling */
+.breadcrumbs span {
+  color: #555; /* Dark gray color for text */
+}
+
+/* Order info and materials list styling */
+#order-info, #materials-list {
+  margin-bottom: 20px; /* Adds margin below each section */
+  background-color: #fff; /* White background color */
+  padding: 20px; /* Adds padding inside each section */
+  border-radius: 5px; /* Rounds the corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Table styling */
+table {
+  width: 100%; /* Makes the table take up the full width */
+  border-collapse: collapse; /* Collapses borders into a single border */
+  margin-top: 10px; /* Adds margin above the table */
+}
+
+/* Table, th, and td border styling */
+table, th, td {
+  border-left: 0.5px solid #91c7ba; /* 0.5px left side border */
+  border-right: 0.5px solid #91c7ba; /* 0.5px right side border */
+  border-bottom: 2px solid #91c7ba; /* 2px bottom border */
+}
+
+/* Table header and cell styling */
+th, td {
+  padding: 12px; /* Adds padding inside cells */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Table header styling */
+th {
+  background-color: #00639599; /* Awnex blue color for header background */
+  color: #fff; /* White text color */
+}
+
+/* Table cell styling */
+td {
+  background-color: #f9f9f9; /* Light gray background color */
+}
+
+/* Input styling for table cells */
+td input[type="number"], td input[type="checkbox"] {
+  width: 100%; /* Makes the input take up the full width */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Number input specific styling */
+td input[type="number"] {
+  text-align: center; /* Aligns text to the center */
+}
+
+/* Stacked cell styling */
+.stacked-cell {
+  display: flex; /* Aligns child elements in a column */
+  flex-direction: column; /* Stacks elements vertically */
+}
+
+/* Horizontal line styling for stacked cells */
+.stacked-cell hr {
+  width: 100%; /* Makes the line take up the full width */
+  border: 0; /* Removes default border */
+  border-top: 1px solid #ccc; /* Adds a top border */
+  margin: 4px 0; /* Adds margin above and below the line */
+}
+
+/* Dropdown menu styling */
+.dropdown {
+  position: relative; /* Positions the dropdown relative to its container */
+  display: inline-block; /* Aligns the dropdown inline with other elements */
+  margin-left: 20px; /* Adds space between the Hamburger button and the Save button */
+}
+
+/* Dropdown button styling */
+.dropbtn {
+  padding: 10px 20px; /* Adds padding inside the button */
+  font-size: 16px; /* Sets the font size */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border: none; /* Removes default border */
+  background-color: #00639599; /* Awnex blue color for button background */
+  color: #fff; /* White text color */
+  border-radius: 5px; /* Rounds the corners of the button */
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none; /* Hides the dropdown content by default */
+  position: absolute; /* Positions the content absolutely within the container */
+  right: 0; /* Aligns the content to the right */
+  background-color: #f9f9f9; /* Light gray background color */
+  min-width: 160px; /* Sets a minimum width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  z-index: 1; /* Ensures the dropdown content is on top */
+}
+
+/* Dropdown content link styling */
+.dropdown-content a {
+  color: #333; /* Dark gray text color */
+  padding: 12px 16px; /* Adds padding inside the links */
+  text-decoration: none; /* Removes underline from links */
+  display: block; /* Makes the links take up the full width */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #ddd; /* Light gray background color on hover */
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block; /* Shows the dropdown content on hover */
+}
+
+/* Hover effect for dropdown button */
+.dropdown:hover .dropbtn {
+  background-color: #003366; /* Darker blue for hover effect */
+}
+
+/* Specific column widths */
+.qty-column {
+  width: 50px; /* Adjust this width as needed for "Qty" columns */
+}
+
+.checkbox-column {
+  width: 50px; /* Adjust this width as needed for checkbox columns */
+}
