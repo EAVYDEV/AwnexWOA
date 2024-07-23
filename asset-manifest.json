@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AwnexWOA/static/css/main.a02e1675.css",
+    "main.js": "/AwnexWOA/static/js/main.e60b4fc2.js",
+    "static/js/453.cc2d2af8.chunk.js": "/AwnexWOA/static/js/453.cc2d2af8.chunk.js",
+    "static/media/awnex-90-logo.png": "/AwnexWOA/static/media/awnex-90-logo.178ecdeb82301759bbc5.png",
+    "index.html": "/AwnexWOA/index.html",
+    "main.a02e1675.css.map": "/AwnexWOA/static/css/main.a02e1675.css.map",
+    "main.e60b4fc2.js.map": "/AwnexWOA/static/js/main.e60b4fc2.js.map",
+    "453.cc2d2af8.chunk.js.map": "/AwnexWOA/static/js/453.cc2d2af8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a02e1675.css",
+    "static/js/main.e60b4fc2.js"
+  ]
+}
