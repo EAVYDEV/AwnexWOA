@@ -2,9 +2,8 @@
   "name": "awnex-web-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://eavydev.github.io/AwnexWOA/",
+  "homepage": "https://<your-username>.github.io/<your-repo-name>",
   "dependencies": {
-    "gh-pages": "^3.2.3", 
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
