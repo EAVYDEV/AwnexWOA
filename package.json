@@ -2,7 +2,7 @@
   "name": "awnex-web-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://<your-username>.github.io/<your-repo-name>",
+  "homepage": "https://nicklaborde.github.io/AwnexWOA",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
   }
 }

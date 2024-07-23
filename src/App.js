@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import logo from './awnex-90-logo.png'; // Ensure the logo is in the src folder
+import logo from './awnex-90-logo.png'; // Ensure this path is correct
 
 function App() {
-  const [orderData, setOrderData] = useState([]);
-  const [workOrderData, setWorkOrderData] = useState([]);
   const [changes, setChanges] = useState([]);
 
   useEffect(() => {
@@ -14,25 +12,20 @@ function App() {
   const fetchData = async () => {
     try {
       // Fetch data from your API or Google Sheets
-      // Example:
       const response = await fetch('/path/to/your/api');
       const data = await response.json();
-      setOrderData(data.orderData);
-      setWorkOrderData(data.workOrderData);
+      // Assuming you do something with the data here
+      // For example:
+      // setOrderData(data.orderData);
+      // setWorkOrderData(data.workOrderData);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
 
-  const handleChange = (row, col, value) => {
-    setChanges(prev => [...prev, { row, col, value }]);
-    // Highlight changes and update save button state
-  };
-
   const saveChanges = async () => {
     try {
       // Save changes to your API or Google Sheets
-      // Example:
       for (const change of changes) {
         await fetch(`/path/to/your/api/${change.row}/${change.col}`, {
           method: 'POST',
@@ -51,7 +44,7 @@ function App() {
   return (
     <div className="App">
       <div className="breadcrumbs">
-        <a href="#" id="home-link">Home</a>
+        <button id="home-link" onClick={() => window.location.href = '/'}>Home</button>
       </div>
       <div className="header">
         <img src={logo} alt="Awnex Logo" className="logo" />
@@ -62,7 +55,7 @@ function App() {
           <div className="dropdown">
             <button className="dropbtn">&#9776;</button>
             <div className="dropdown-content">
-              <a href="#" id="settings-button">Settings</a>
+              <button id="settings-button" onClick={() => alert('Settings button clicked')}>Settings</button>
             </div>
           </div>
         </div>
